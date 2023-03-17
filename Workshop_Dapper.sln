@@ -25,7 +25,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{DB272E
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{D8D0991B-21B5-4BFE-9F2A-3EE993400110}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain.UseCasesTest", "Domain.UseCasesTest\Domain.UseCasesTest.csproj", "{122FC04B-B6E2-4674-BEE2-8761377AE553}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain.UseCasesTest", "Domain.UseCasesTest\Domain.UseCasesTest.csproj", "{122FC04B-B6E2-4674-BEE2-8761377AE553}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrivenAdapter.Mongo", "DrivenAdapter.Mongo\DrivenAdapter.Mongo.csproj", "{F0FB8803-73DB-4492-A5F7-978313797DD7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,6 +55,10 @@ Global
 		{122FC04B-B6E2-4674-BEE2-8761377AE553}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{122FC04B-B6E2-4674-BEE2-8761377AE553}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{122FC04B-B6E2-4674-BEE2-8761377AE553}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0FB8803-73DB-4492-A5F7-978313797DD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0FB8803-73DB-4492-A5F7-978313797DD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0FB8803-73DB-4492-A5F7-978313797DD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0FB8803-73DB-4492-A5F7-978313797DD7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -68,6 +74,7 @@ Global
 		{DB272E8E-0750-41B3-BBD4-CF2AFA8455A0} = {298074C6-0336-47AE-A6CA-74182A90EFC1}
 		{D8D0991B-21B5-4BFE-9F2A-3EE993400110} = {298074C6-0336-47AE-A6CA-74182A90EFC1}
 		{122FC04B-B6E2-4674-BEE2-8761377AE553} = {DB272E8E-0750-41B3-BBD4-CF2AFA8455A0}
+		{F0FB8803-73DB-4492-A5F7-978313797DD7} = {B47F60AF-7899-412E-AD41-BB4525BA9EE8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {28F29407-499D-4426-BBE3-4CCFBF77EC87}

@@ -32,14 +32,10 @@ namespace Peliculas.AppService
                         if (ex.Message.Contains("FOREIGN"))
                         {
                             responseModel.Message = "La llave foranea ingresada no existe en la base de datos";
-                            response.StatusCode = (int)HttpStatusCode.InternalServerError;
+                            response.StatusCode = (int)HttpStatusCode.NotFound;
                         }
                         break;
                         
-
-                    case KeyNotFoundException e:
-                        response.StatusCode = (int)HttpStatusCode.NotFound;
-                        break;
 
                     default:
                         response.StatusCode = (int)HttpStatusCode.InternalServerError;

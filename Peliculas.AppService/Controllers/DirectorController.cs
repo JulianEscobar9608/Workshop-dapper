@@ -28,6 +28,12 @@ namespace Peliculas.AppService.Controllers
             return await _directorUseCase.ObtenerListaDirectores();
         }
 
+        [HttpPost]
+        public async Task<Director> Registrar_Director([FromBody] InsertNewDirector command)
+        {
+            return await _directorUseCase.AgregarDirector(_mapper.Map<Director>(command));
+        }
+
 
     }
 }

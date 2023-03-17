@@ -13,5 +13,7 @@ namespace Domain.Entities.Entities
         public int Lanzamiento { get; set; }
         public int Cantidad_Disponible { get; set; }
         public int Id_Director { get; set; }
+
+
     }
 }

@@ -38,9 +38,18 @@ namespace Infrastructure.DrivenAdapter
             throw new NotImplementedException();
         }
 
-        public Task<Director> InsertDirectorAsync(Director director)
+        public async Task<Director> InsertDirectorAsync(Director director)
         {
-            throw new NotImplementedException();
+            var connection = await _dbConnectionBuilder.CreateConnectionAsync();
+            var directorAAgregar = new
+            {
+                nombre = director.Nombre,
+                fecha = director.Fecha_Nacimiento,
+                premios = director.Cantidad_Premios,
+            };
+            string sqlQuery = $"INSERT INTO {tableName} (nombre, fecha_nacimiento, cantidad_premios)VALUES(@nombre, @fecha, @premios)";
+            var rows = await connection.ExecuteAsync(sqlQuery, directorAAgregar);
+            return director;
         }
 
         public Task<Director> InsertDirectorSqlKataAsync(Director director)
